@@ -1,0 +1,8 @@
+,,
+,Steps,What I Exactly Did
+,1,Deleted all rows where every column was blank (complete null records)
+,2,Calculated missing Total_Spent values by applying: Quantity × Price_Per_Unit
+,3,Filled missing Price_Per_Unit values using item-price mapping via IF/SWITCH formulas
+,4,Filled missing Item names by matching known prices in Price_Per_Unit column
+,5,Replaced all UNKNOWN entries with blanks to clean placeholder garbage
+,6,"Formatted columns — currency, text alignment, and consistent values"
