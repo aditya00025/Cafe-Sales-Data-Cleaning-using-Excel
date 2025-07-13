@@ -63,9 +63,10 @@ To clean and structure messy sales data using only **Microsoft Excel and Google 
   "Juice", 3,
   "Tea", 1.5,
   ""))
+```
 
 ### To fill missing Item based on Price_Per_Unit:
-
+```excel
 =IF(OR(B2="", B2="UNKNOWN"),
   IF(D2=1.5, "Tea",
   IF(D2=2, "Coffee",
@@ -74,8 +75,8 @@ To clean and structure messy sales data using only **Microsoft Excel and Google 
   IF(D2=4, "Sandwich",
   IF(D2=3, B2, B2))))),
   B2)
-
+```
 ### To calculate Total_Spent only if Quantity and Price are available:
-
+```excel
 =IF(AND(ISNUMBER(C2), ISNUMBER(D2)), C2 * D2, "")
-
+```
